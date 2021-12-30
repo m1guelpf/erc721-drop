@@ -1,0 +1,4 @@
+testMint(uint16) (μ: 25536980, ~: 1838)
+testMintWithMaxSupply() (gas: 17389)
+testMintWithNoEth() (gas: 7578)
+testWithdraw() (gas: 12858)
