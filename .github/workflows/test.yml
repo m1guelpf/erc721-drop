@@ -12,6 +12,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: recursive
 
       - name: Install libusb (needed to hw wallet support on Forge/Cast)
         run: sudo apt update && sudo apt install pkg-config libudev-dev
