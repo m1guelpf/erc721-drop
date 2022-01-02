@@ -23,7 +23,7 @@ contract ERC721TokenTest is DSTest {
         // set totalSupply counter to max supply
         hevm.store(
             address(token),
-            bytes32(uint256(3)),
+            bytes32(uint256(7)),
             bytes32(token.TOTAL_SUPPLY())
         );
 
