@@ -26,7 +26,7 @@ contract ERC721Token is LilOwnable, ERC721 {
     }
 
     function mint(uint16 amount) external payable {
-        if (totalSupply + amount >= TOTAL_SUPPLY) revert NoTokensLeft();
+        if (totalSupply + amount > TOTAL_SUPPLY) revert NoTokensLeft();
         if (msg.value < amount * PRICE_PER_MINT) revert NotEnoughETH();
 
         unchecked {
